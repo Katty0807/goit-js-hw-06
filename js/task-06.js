@@ -4,7 +4,8 @@ inputEl.addEventListener('blur', onInputBlur);
 function onInputBlur() {
     if (inputEl.value.length >= 6) {
         inputEl.classList.add('valid');
-
     }
-    inputEl.classList.add('invalid');
+    else {
+        inputEl.classList.add('invalid');
+    };
 }
