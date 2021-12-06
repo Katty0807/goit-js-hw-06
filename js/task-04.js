@@ -6,12 +6,12 @@ const buttonDecrement = document.querySelector('button[data-action="decrement"]'
 
 buttonIncrement.addEventListener("click", (event) => {
     counterValue += 1;
-    valueEl = counterValue;
+    valueEl.textContent = counterValue;
     console.log(valueEl);
 })
 
 buttonDecrement.addEventListener('click', (event) => {
    counterValue -= 1;
-    valueEl = counterValue;
+    valueEl.textContent = counterValue;
     console.log(valueEl); 
 })
